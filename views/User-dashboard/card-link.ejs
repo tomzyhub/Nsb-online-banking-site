@@ -1,0 +1,79 @@
+
+    <title>Northen-savings| Bank | Dashboard..</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <!-- scripts starts here -->
+<%- include('partials/__metahead') %>
+<!-- starts here -->
+
+<body>
+  
+  <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-grow  text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+       
+       <nav class="nav">
+            <div class="imgy" data-aos="fade-down" data-aos-delay="300">
+                <img src="/public/images/logo.png" alt="logo">
+
+            </div>
+        </nav>
+   
+<main class="container">
+  <div class="local-form container">
+    <form class="mt-5 form-local  colorbg">
+      <i id="icon" class="fas fa-link colorbg"></i>
+      <h3 class=" text-local colorbg ">link your Card</h3>
+      <div class=" col-6 ml-5 justify-content-center colorbg ">
+        <input type="text" class="colorbg input-group mb-3 form-control" placeholder="name on card">
+      
+      </div>
+
+      <div class="row colorbg">
+
+      
+        <div class="col-6 colorbg  mb-3">
+          <input type="text" class="form-control" placeholder="type of card">
+          <small id="emailHelp" class=" colorbg form-text text-white"> Master or Visa Card </small>
+        </div>
+       
+        <div class="col-6 colorbg mb-3 ">
+          <input type="text" class="form-control" placeholder="card Number" required>
+        </div>
+      </div>
+
+      <div class="row colorbg">
+        <div class=" col-6 colorbg ">
+          <input type="text" class="form-control" placeholder="cvv" required>
+        </div>
+
+        <div class=" col-6 colorbg ">
+          <input type="month" class="form-control" placeholder="MM">
+        </div>
+
+        <div class=" col-6 colorbg  mt-3">
+            <input  type="text" class="form-control" placeholder="YY">
+          </div>
+
+          <div class=" col-6 colorbg  mt-3">
+            <input  type="password" class="form-control" placeholder=" pin">
+          </div>
+
+      </div>
+   
+      <div class="row colorbg">
+        <div class="col-6 colorbg mt-3 ml-5">
+          <button id="submit" style="background-color:var(--colorbtn);" type="submit" class=" btn " >send <i id="iview" class="fas fa-paper-plane "></i></button>
+        </div>
+      </div>
+     
+    </form>
+  </div>
+    
+</main>
+<!-- scripts starts here -->
+<%- include('partials/__scripts') %>
+  <!-- starts here -->
+  </body>

@@ -1,0 +1,66 @@
+
+    <title>Northen-savings| Bank | Dashboard..</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <!-- scripts starts here -->
+<%- include('partials/__metahead') %>
+<!-- starts here -->
+
+<body>
+  
+  <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-grow  text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+       
+       <nav class="nav">
+            <div class="imgy" data-aos="fade-down" data-aos-delay="300">
+                <img src="/public/images/logo.png" alt="logo">
+
+            </div>
+        </nav>
+   
+<main class="container">
+  <div class="local-form container">
+    <form class="mt-5 form-local container colorbg">
+      <i id="icon" class="fas fa-landmark colorbg"></i>
+      <h3 class=" text-local colorbg ">Local Transfer</h3>
+      <div id="amount" class=" col-8 ml-5 justify-content-center colorbg amount">
+        <input type="text" class="colorbg input-group mb-3 form-control" placeholder="enter amount">
+        <h2>£</h2>
+      </div>
+     
+      <div class="row colorbg">
+        <div class="col-6 colorbg  mb-3">
+          <input type="text" class="form-control" placeholder="bank name">
+        
+        </div>
+        <div class="col-6 colorbg mb-3 ">
+          <input type="text" class="form-control" placeholder="Account number">
+        </div>
+      </div>
+
+      <div class="row colorbg">
+        <div class=" col-6 colorbg ">
+          <input type="text" class="form-control" placeholder="Purpose">
+        </div>
+        <div class=" col-6 colorbg ">
+          <input id="oneTime" type="text" class="form-control" placeholder="one time pin">
+        </div>
+      </div>
+      <small id="emailHelp" class=" colorbg form-text text-white"> £10 will be charged on every transaction</small>
+      <div class="row colorbg">
+        <div class="col-8 colorbg mt-3 ml-5">
+          <input id="submit" style="background-color:var(--colorbtn);" type="submit" class=" btn form-control" value=" £ 510.00">
+        </div>
+      </div>
+     
+    </form>
+  </div>
+    
+</main>
+<!-- scripts starts here -->
+<%- include('partials/__scripts') %>
+  <!-- starts here -->
+  </body>

@@ -1,0 +1,127 @@
+
+<%- include('partials/__header') %>
+
+<body>
+  
+      
+  <div class="sidenav">
+    <h4 class="head-note"> NSB Console </h4>
+   <a href="/admin-dashboard">Home</a>
+      <a href="">Deposit</a>
+      <a href="/create-new">Add New</a>
+      <a href="/admin-login">Logout</a>
+  </div>
+
+    <div class=" mt-5  main">
+      <div class="container text-align-center ">
+        <h4 class=" ml-3"> Add New Customer  </h4>
+        <small class=" lead ">please enter all fields correctly, everything is required ** </small>
+      </div>
+     <div class="contianer">
+     
+      
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <%= errors.msg %>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+
+       
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <%= messages  %>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+       
+     </div>
+        <form action="/create-account" method="post" class="form-group form-belt">
+            <div class="form-row  mt-2">
+              <div class="col mt-2">
+                <label for="FullName ">FullName</label>
+                <input type="text" class="form-control" value=" <%= typeof fullName != 'undefined' ? fullName : '' %> " name="fullName"  required>
+              </div>
+
+              <div class="col mt-2">
+                <label for="ID Number ">ID Number</label>
+                <input type="text" class="form-control" name="idNumber" value="<%= typeof idNumber != 'undefined' ? idNumber : '' %> "  " required>
+              </div>
+            </div>
+            <div class="form-row mt-2">
+
+              <div class="col mt-2">
+                <label for="Nationality ">Nationality </label>
+                <input type="text" class="form-control"  value="<%= typeof nationality != 'undefined' ? nationality : '' %> "name="nationality" required>
+              </div>
+    
+              <div class="col mt-2">
+                <label for="Gender ">Gender </label>
+                <input type="text" class="form-control" name="Gender" value="<%= typeof Gender != 'undefined' ? Gender : '' %> "  required>
+              </div>
+            </div>
+
+            <div class="form-row mt-2">
+              <div class="col">
+                <label for="email ">email</label>
+                <input type="email" class="form-control" name="email"  value="<%= typeof email != 'undefined' ? email : '' %> " required>
+              </div>
+    
+              <div class="col mt-2">
+                <label for="phone number ">phone number</label>
+                <input type="text" class="form-control" name="phoneNumber" value="<%= typeof phoneNumber != 'undefined' ? phoneNumber : '' %> "  required>
+              </div>
+            </div>
+            
+            <div class="form-row mt-2">
+              <div class="col">
+                <label for="date of birth ">date of birth</label>
+                <input type="date" class="form-control" name="date_of_birth"  value="<%= typeof date_of_birth != 'undefined' ? date_of_birth : '' %> " required>
+              </div>
+    
+              <div class="col mt-2">
+                <label for="account name ">account name</label>
+                <input type="text" class="form-control" name="accountName"  value="<%= typeof accountName != 'undefined' ? accountName : '' %> "  required>
+              </div>
+    
+            </div>
+
+            <div class="form-row mt-2">
+              <div class="col">
+                <label for="account number ">account number</label>
+                <input type="text" class="form-control" name="accountNumber"  value="<%= typeof accountNumber != 'undefined' ? accountNumber : '' %> "  required>
+              </div>
+    
+              <div class="col mt-2">
+                <label for="marital status">marital status</label>
+                <input type="text" class="form-control" name="maritalStatus" value="<%= typeof maritalStatus != 'undefined' ? maritalStatus : '' %> " required>
+              </div>
+    
+            </div>
+            <div class="form-row mt-2">
+              <div class="col mt-2"> 
+                <label for="marital status">username</label>
+                <input type="text" class="form-control"  name="username"  value="<%= typeof username != 'undefined' ? username : '' %> "  required>
+              </div>
+    
+              <div class="col mt-4">
+                <input type="password" class="form-control" name="password"  placeholder=" enter password" required>
+              </div>
+    
+            </div>
+        <div class="form-row">
+              <div class="col mt-2 mb-2">
+                <input type="password" class="form-control" name="password2"  placeholder=" confirm password" required>
+              </div>
+    
+              <div class="col mt-2 mb-2 ">
+                <input type="submit" class="btn btn-primary col-10 btn-block " name="submit"  value=" submit">
+              </div>
+    
+            </div>
+            
+          </form>
+    </div>
+</body>
+<%- include('partials/__footer') %>

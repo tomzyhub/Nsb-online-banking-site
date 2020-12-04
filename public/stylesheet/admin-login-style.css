@@ -1,0 +1,57 @@
+:root{
+    --primary:teal;
+    --secnodary:#587850;
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url('/public/images/blacksand.jpg') no-repeat center/cover;
+}
+
+.content{
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top:156px;
+}
+
+.hello{
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: 'Segoe UI';
+    color:#dee1ec;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top:100px;
+    
+}
+
+.btn-go{
+    margin-left:5px;
+    width:100px;
+    height:25px;
+    background-color:var(--primary);
+    color:white;
+    border:1px solid white;
+    border-radius:3px;
+    text-transform: uppercase;
+}
+
+.btn-go:hover{
+    background-color: black;
+    color:white;
+    transition: ease-in;
+}
+
+.inpt{
+    margin-left: 10px;
+    border-radius:5px;
+    height: 25px;
+}

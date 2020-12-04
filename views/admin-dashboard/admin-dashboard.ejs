@@ -1,0 +1,38 @@
+<%- include('partials/__header') %>
+
+<body>
+  
+    
+   <div class="sidenav">
+     <h4 class="head-note"> NSB Console </h4>
+    <a href="/admin-dashboard">Home</a>
+       <a href="">Deposit</a>
+       <a href="/create-new">Create New</a>
+       <a href="/admin-login">Logout</a>
+   </div>
+<!-- main content -->
+   <div class="main">
+    <header class="header">
+        <h2 > NSB Admin Console </h2> 
+      </header>
+     <h4>still here</h4>
+     <% users.forEach(function (user) { %>
+      <li>  
+        <h3><b>pin :</b> <%= user.id%></h3> 
+          <h3><b>fullname :</b> <%= user.fullName%></h3>  
+          <h3><b>username :</b> <%= user.username%></h3>  
+          <h3><b>account Number :</b> <%= user.accountNumber%></h3> 
+      </li>                                   
+  <% }) %>
+  </div>
+</body>
+
+
+
+
+
+
+
+
+
+<%- include('partials/__footer') %>

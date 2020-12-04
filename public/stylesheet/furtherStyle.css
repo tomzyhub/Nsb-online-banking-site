@@ -1,0 +1,561 @@
+
+:root{
+    --theme:#e01f3d;
+    --primariya: #d72323;
+    --hover: #21e6c1;
+    --colorbtn: #fb8a2e;
+    
+}
+html{
+    overflow-x: hidden;
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-size: 1em;
+    background-color: #fff;
+    font-family: garamond, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+ 
+}
+
+/* dashboard style starts here */
+
+.coins{
+    font-size: 57px;
+    cursor: pointer;
+    background: none;
+    color:white; 
+    margin-top:10px; 
+    position: relative;
+  
+
+}
+
+/* hovers  */
+.coins:hover{
+    /* color:rgb(15, 255, 231); */
+    color: var(--hover);
+    transition: 1s ease-in-out;   
+}
+
+.wallet{
+    font-size: 57px;
+    cursor: pointer;
+    background: none;
+    color:white; 
+    margin-top:17px;
+    margin-left:10px;       
+}
+
+.wallet:hover{
+    color:var(--hover);
+    transition: 300ms ease-in-out;
+}
+
+
+
+.card-linkin{
+    font-size: 57px;
+    cursor: pointer;
+    background: none;
+    color:white; 
+    margin-top:5px;
+    position: relative;
+    text-decoration: none;
+    
+}
+
+.card-linkin:hover{
+    color: var(--hover);
+    transition: 1s ease-in;
+}
+
+.invoice{
+    font-size: 57px;
+    cursor: pointer;
+    background: none;
+    color:white; 
+    margin-top:5px;
+    position: relative;
+   
+}
+
+.invoice:hover{
+    color: var(--hover);
+}
+
+.shaper{
+    background: none;
+}
+
+.stripe-text{
+    font-size:1em;
+    background:none;
+    color:white;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 2px;
+    padding: 0px;
+    
+
+}
+
+hr{
+    margin-top:20px;
+    color:#333
+
+} 
+
+.light-icons{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-gap: 8px;
+    grid-template-rows: auto;
+    width: 270px;
+    height:380px;
+    padding: 15px;
+    margin:10px;
+    margin-left:175px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.7;
+    background-color: black;
+}
+
+
+.nav{
+ justify-content: center;
+ display: flex;
+ padding: 10px;
+ margin-bottom: 30px;
+ border: 3px solid var(--primariya) ;
+ border-right: none;
+ border-left: none;
+ width: 100%;
+ height:50px;
+}
+
+.imgy{
+    width: 140px;
+    height: auto;
+    margin-left: 30px;
+    margin-bottom:50px;
+
+}
+
+.imgy > img{
+width:100px;
+height:auto;
+margin-bottom:40px;
+}
+
+.welcome{
+    
+    margin-bottom: 10px;
+    width:100%;
+    height:60px;
+   text-align: center;
+   color:#333;
+
+
+}
+
+.belt{
+    margin-bottom: 10px;
+    width:100%;
+    height:60px;
+   background-color: var(--primariya) ;
+   text-align: center;
+   color:white; 
+}
+
+.belt > h3{
+    padding-top:20px;
+    padding-left:30px;
+    background-color: var(--primariya);
+    font-weight: 700;
+}
+
+
+.welcome > h3{
+    padding-top:20px;
+    padding-left:30px;
+    font-weight: 700;
+}
+.welcome > h3 >span{
+    font-size:1.3em;
+    color:orange;
+}
+
+.market{
+
+    margin-top: 30px;
+    margin-left: 55px;
+    font-size: 1em;
+}
+
+
+.acct-info{
+   
+    margin-top: 20px;
+    margin-left: 290px;
+    margin-bottom: 20px;
+    width: 690px;
+    height: 320px;
+    padding: 20px;
+     background-color: var(--primariya);
+    text-transform: uppercase;
+}
+
+.acct-info > h2{
+    text-align: center;
+    font-size: 1.2em;
+     background-color: var(--primariya);
+    color:#fff;
+}
+
+.acct-info > h4{
+    margin-bottom:5px;
+    margin-left:20px;
+    background-color: var(--primariya);
+    font-size:1.1em;
+    color: #fff;
+   
+
+}
+.acct-info > h4 > span{
+    margin-left: 20px;
+    padding-left: 5px;
+    font-size:1.1em;
+    color:orange;
+     background-color: var(--primariya);
+}
+
+.bal{
+    margin-top:20px;
+    margin-left: 20px;
+    background-color: var(--primariya);
+    color:#fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.bal > h3 {
+    color: #fff;
+    background-color: var(--primariya);
+}
+
+.bal > h3 >span{
+    background-color: var(--primariya);
+    margin-left:10px;
+    font-size: 1.3em;
+    color: #17b978;
+}
+
+
+.features{
+   justify-content: center;
+   align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 290px;
+    width: 650px;
+    height: 420px;
+    padding: 10px;
+    background: url(/public/images/center.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    text-transform: capitalize;
+    border-radius: 3px;
+   
+}
+.card-link{
+    display: none;
+    text-align: center;
+    margin-bottom:10px;
+}
+.card-link > h3{
+    color: orangered;
+}
+
+/* dashboard style ends here */
+
+/* local-transfer style starts here */
+.local-form{
+    width: 100px;
+    height: 350px;
+    border: 3px solid #be6a15;
+    border-radius: 5px;
+    margin-top: 85px;
+  
+    
+}
+
+.transactions-box{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    height: auto;
+    border: 2px solid var(--theme);
+    background-color: #000000;
+    border-radius: 5px;
+    margin-top: 85px;
+    color:white;
+  
+}
+
+.progress-box{
+    text-align: center;
+    height: auto;
+    border: 4px solid var(--theme);
+    background-color: #000000;
+    border-radius: 5px;
+    margin-top: 85px;
+    color:white;
+  
+}
+
+#Progress_Status { 
+    text-align: center;
+    width: 50%; 
+    background-color: #ddd; 
+    margin-top:20px;
+    margin-left:190px;
+    padding: 0px;
+  } 
+  
+  #input{
+      border-radius:5px;
+      width:220px;
+
+  }
+    
+  #myprogressBar { 
+    width: 0%; 
+    height: 20px; 
+    margin:0;
+    padding:0;
+    background-color: #4CAF50; 
+    color:white;
+  }
+
+.colorblock{
+    background: none;
+    padding-left: 20px;
+}
+.amount{
+    display: inline-flex;
+    padding-left: 100px;
+   
+}
+.wrapper {
+    position: relative;
+    align-items: center;
+    width: 1px;
+    height: 50vh;
+    border:none;
+    background-color: black;
+    
+    
+  }
+
+  .el {
+     
+    position: absolute;
+    opacity: 1;
+    width: 2px;
+    height: 10vh;
+    margin-top: 8vh;
+    margin-left: 482px;
+    transform-origin: 50% 100%;
+    background: white;
+  }
+
+
+.amount > h2{
+    background-color: var(--colorbtn);
+    color: black;
+    width: 40px;
+    height: 37px;
+    border-radius: 4px;
+    border-left:none;
+    font-weight: bold;
+    padding: 2px 5px 2px 5px;
+
+}
+
+#icon{
+    text-align: center;
+    margin-left:500px;
+    font-size: 2.5em;
+    font-weight: 700;
+    color:#fff;
+}
+
+#iview{
+    background: none;
+
+}
+
+
+.text-local{
+    text-align: center;
+    padding-left:90px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top:10px;
+ 
+}
+
+.form-local{
+    border: 3px solid #333;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow:5px 5px var(--primariya);
+
+}
+
+.colorbg{
+    background-color:var(--primariya)
+}
+
+
+/* local-transfer style ends here */
+
+
+/* media queries starts here */
+
+
+@media only screen and (max-width: 768px) {
+
+   .acct-info{
+       text-align: center;
+       margin-left: 20px;
+
+   }
+   
+   .features{
+       margin-left: 10px;
+   }
+   #icon{
+       margin-left: 270px;
+   }
+   .el{
+       margin-left: 292px;
+   }
+
+   .wrapper{
+       border: none;
+   }
+    
+} 
+
+@media (max-width: 668px) {
+
+    .el{
+        margin-left: 172px;
+    }
+
+    .wrapper{
+        border:none;
+
+    }
+
+    .imgy{
+        margin-bottom:15px;
+        width: auto;
+        height: 20px;
+    }
+
+.imgy > img{
+    
+    height: 38px;
+    width: auto;
+}
+
+.belt > h3{
+       
+    font-weight: 400;
+    font-size: 1.1em;
+    
+}
+.belt{
+    border-radius: 7px;
+}
+
+    .welcome{
+        
+        border-radius: 7px;
+        display: block;
+        width: 100%;
+        
+        }
+    .welcome > h3{
+        font-size:1em;
+    }
+
+    .acct-info{
+       margin-bottom: 10px;
+        margin-top: 55px;
+        margin-left: 0px;
+        border-radius: 7px;
+        width: auto;
+        height: 380px;
+        padding: 10px;
+       
+       
+    }
+
+    .acct-info > h4{
+        width: auto;
+        margin-left:20px;
+        font-size: 1em;
+        margin-top:10px;
+        color:#fff
+    }
+
+    .acct-info >h4 > span{
+     margin-top:5px;
+     padding-left: 0px;
+     width: auto;
+    }
+    .features{
+        margin-left:10px;
+        width: auto;
+        border:none;
+        border-radius: 5px;
+        background-position: center;
+
+    }
+
+    .light-icons{
+        border:2px solid gray;
+        margin-left:30px;
+        border-top: none;
+        border-radius: 7px;
+    }
+
+    .amount{
+        display: inline-flex;
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    #icon{
+        margin-left:100px;
+    }
+
+    .text-local{
+        padding-left:50px;
+    }
+    
+    #Progress_Status{
+        margin-left:90px;
+    }
+
+  }
